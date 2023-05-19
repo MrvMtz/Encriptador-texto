@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <img class="logo" src="img/Logo.png" alt="Logo de alura">
+        <h1 class="titulo">Encripta y desencripta mensajes.</h1>
+    </header>
+
+    <main>
+        
+        <section class="section-1">
+
+            <textarea name="" class="textarea1" id="txt-area1" cols="30" rows="10" placeholder="Ingrese su mensaje aqui."></textarea>
+            
+            <div class="infor">
+                <h6 class="informacion"><img class="img-infor" src="img/infor.png" alt=""> Solo letras minusculas y sin acentos.</h6>
+            </div>
+            
+            <div class="botones-txt1">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        
+        </section>
+
+        <section class="section-2">
+            
+            <textarea name="" class="textarea2" id="txt-area2" cols="30" rows="10" ></textarea>
+            
+            <div class="botones-txt2">
+                <button class="btn-copiar" onclick="copiar()">Copiar</button>
+            </div>
+
+            <div class="resultado">
+                <h2 id="text-resultado" class="txt-resultado"></h2>
+                <img id="ima-resultado" class="img-resultado" src="">
+            </div>
+        
+        </section>
+
+    </main>
+
+    <footer>
+        <p>MrvMtz - Alura Challenge 1 </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
